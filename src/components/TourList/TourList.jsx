@@ -10,7 +10,7 @@ const TourList = () => {
   const [tours, setTours] = useState(tourData);
 
   const removeTour = id => {
-    console.log(id);
+    setTours(tours.filter(tour => tour.id !== id));
   };
 
   return (

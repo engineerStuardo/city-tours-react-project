@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './tour.scss';
 
-const Tour = ({ city, img, name, info, removeTour }) => {
+const Tour = ({ id, city, img, name, info, removeTour }) => {
   const [show, setShow] = useState(false);
 
   const hideShow = () => {
@@ -13,7 +13,7 @@ const Tour = ({ city, img, name, info, removeTour }) => {
     <article className='tour'>
       <div className='img-container'>
         <img src={img} alt={name} />
-        <span className='close-btn'>
+        <span className='close-btn' onClick={() => removeTour(id)}>
           <i className='fas fa-window-close' />
         </span>
       </div>
