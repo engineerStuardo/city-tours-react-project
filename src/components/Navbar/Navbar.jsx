@@ -6,7 +6,7 @@ import logo from '../../logo.svg';
 
 import { navLinks } from '../../tourData.js';
 
-import NavLink from './NavLink';
+import NavLink from '../NavLink/NavLink';
 
 const Navbar = () => {
   return (
