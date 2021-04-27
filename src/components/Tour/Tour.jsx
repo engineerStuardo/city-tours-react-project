@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './tour.scss';
 
 const Tour = ({ city, img, name, info, removeTour }) => {
+  const [show, setShow] = useState(false);
+
+  const hideShow = () => {
+    setShow(oldState => !oldState);
+  };
+
   return (
     <article className='tour'>
       <div className='img-container'>
@@ -16,11 +22,11 @@ const Tour = ({ city, img, name, info, removeTour }) => {
         <h4>{name}</h4>
         <h5>
           info{' '}
-          <span>
+          <span onClick={hideShow}>
             <i className='fas fa-caret-square-down'></i>
           </span>
         </h5>
-        <p>{info}</p>
+        {show && <p>{info}</p>}
       </div>
     </article>
   );
