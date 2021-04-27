@@ -1,34 +1,40 @@
+export const navLinks = [
+  { id: 1, title: 'home' },
+  { id: 2, title: 'about' },
+  { id: 3, title: 'tours' },
+];
+
 export const tourData = [
   {
     id: 1,
-    city: "new york",
-    img: "./img/newyork.jpeg",
-    name: "new york bridge tour",
+    city: 'new york',
+    img: './img/newyork.jpeg',
+    name: 'new york bridge tour',
     info:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi"
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi',
   },
   {
     id: 2,
-    city: "paris",
-    img: "./img/paris.jpeg",
-    name: "paris lights tour",
+    city: 'paris',
+    img: './img/paris.jpeg',
+    name: 'paris lights tour',
     info:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi"
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi',
   },
   {
     id: 3,
-    city: "london",
-    img: "./img/london.jpeg",
-    name: "london royal palace tour",
+    city: 'london',
+    img: './img/london.jpeg',
+    name: 'london royal palace tour',
     info:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi"
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi',
   },
   {
     id: 4,
-    city: "tokyo",
-    img: "./img/tokyo.jpeg",
-    name: "tokyo sushi tour",
+    city: 'tokyo',
+    img: './img/tokyo.jpeg',
+    name: 'tokyo sushi tour',
     info:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi"
-  }
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, nam omnis error corrupti eum assumenda enim odit architecto corporis. Sequi',
+  },
 ];

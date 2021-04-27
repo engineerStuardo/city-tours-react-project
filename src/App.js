@@ -2,11 +2,13 @@ import React from 'react';
 
 import './App.scss';
 
+import Navbar from './components/Navbar/Navbar';
+
 const App = () => {
   return (
-    <h1>
-      our app
-    </h1>
+    <>
+      <Navbar />
+    </>
   );
 };
 
