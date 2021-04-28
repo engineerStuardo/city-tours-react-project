@@ -3,7 +3,7 @@ import React from 'react';
 import './home.scss';
 
 import logo from '../../logo.svg';
-import imgBanner from '../../city-banner.jpg';
+import imgBanner from '../../images/city-banner.jpg';
 
 const Home = () => {
   return (
