@@ -1,13 +1,21 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import './navLink.scss';
 
-const NavLink = ({ name }) => {
+const NavLink = ({ title, path }) => {
+  const location = useLocation();
+
   return (
     <li>
-      <a href='/' className={`nav-link ${name === 'tours' ? 'active' : ''}`}>
-        {name}
-      </a>
+      <Link
+        to={`${path}`}
+        className={`nav-link ${
+          path === `${location.pathname}` ? 'active' : ''
+        }`}
+      >
+        {title}
+      </Link>
     </li>
   );
 };

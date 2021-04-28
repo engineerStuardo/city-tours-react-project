@@ -13,8 +13,8 @@ const Navbar = () => {
     <nav className='navbar'>
       <img src={logo} alt='cirty tours company' />
       <ul className='nav-links'>
-        {navLinks.map(({ id, title }) => (
-          <NavLink key={id} name={title} />
+        {navLinks.map(({ id, ...moreData }) => (
+          <NavLink key={id} {...moreData} />
         ))}
       </ul>
     </nav>
