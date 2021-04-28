@@ -21,12 +21,6 @@
 
 .img-container {
   position: relative;
-
-  &:hover {
-    .close-btn {
-      opacity: 1;
-    }
-  }
 }
 
 .close-btn {
@@ -37,7 +31,7 @@
   font-size: 2rem;
   cursor: pointer;
   transition: $mainTransition;
-  opacity: 0;
+  opacity: 1;
 }
 
 .tour-info {
@@ -61,6 +55,20 @@
       margin: 0.5rem;
       font-size: 1.2rem;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .close-btn {
+    opacity: 0;
+  }
+
+  .img-container {
+    &:hover {
+      .close-btn {
+        opacity: 1;
+      }
     }
   }
 }
