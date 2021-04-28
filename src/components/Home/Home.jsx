@@ -3,12 +3,15 @@ import React from 'react';
 import './home.scss';
 
 import logo from '../../logo.svg';
-import imgBanner from '../../images/city-banner.jpg';
 
 const Home = () => {
   return (
     <div className='banner-container'>
-      <img src={imgBanner} alt='city banner' className='img-banner' />
+      <img
+        src={process.env.PUBLIC_URL + '/images/city-banner.jpg'}
+        alt='city banner'
+        className='img-banner'
+      />
       <div className='banner'>
         <img src={logo} alt='cirty tours company' />
         <p>
